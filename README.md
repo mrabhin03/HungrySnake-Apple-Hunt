@@ -24,7 +24,6 @@ Instead of you controlling the snake, it uses a **pathfinding algorithm** to aut
 1. Clone this repo  
    ```bash
    git clone https://github.com/your-username/HungrySnake.git
-```
 
 2. Open `index.html` in your browser.
 3. Watch the snake chase apples automatically! 🎉
