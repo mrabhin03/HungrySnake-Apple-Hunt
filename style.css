@@ -1,19 +1,34 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 body{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Assets/Grass.jpg);
+    background-position: center;
+    background-size: cover;
 }
 #main{
     width: 500px;
     height: 500px;
-    border: 3px solid black;
+    border: 5px solid black;
     display: grid;
     background-color: #a5e4b2;
+    background-image: url(Assets/Grass.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.166),
+    inset 0px 0px 10px black;
 }
 .cell{
-    background-color: #a5e4b2;
+    background-color: #a5e4b200;
     display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.049);
     place-items: center;
     font-size: 0px;
 }
@@ -62,4 +77,13 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:530px) {
+    #main{
+        width: 300px;
+        height: 300px;
+    }
 }

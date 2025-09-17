@@ -54,7 +54,7 @@ async function move(){
         next=nextall[io]
         if(nextall.length==0){
             // window.location.reload()
-            alert("KK")
+            alert("Crash.....!")
         }
         if(checkApple(next)){
             document.getElementById("leng").innerHTML=snakeSize
@@ -100,10 +100,10 @@ async function move(){
  function noLoop(prev, prevPoint, count, paths) {
     stepsCount++;
     
-    if (count >= (snakeSize * 2) || count >= (((cellCount * cellCount)) - snakeSize * 1.2)) {
+    if (count >= (snakeSize * 1.2) || count >= (((cellCount * cellCount)) - snakeSize * 1.2)) {
         return paths;
     }
-    if (stepsCount >= (cellCount * cellCount) * 100**100) {
+    if (stepsCount >= (cellCount * cellCount) * 100*100) {
         return paths;
     }
 
